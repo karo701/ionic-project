@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Menu } from './menu.model';
+import { MenuService } from './menu.service';
 
 @Component({
   selector: 'app-menu',
@@ -7,23 +8,11 @@ import { Menu } from './menu.model';
   styleUrls: ['./menu.page.scss'],
 })
 export class MenuPage implements OnInit {
-  menu: Menu[] = [
-    {
-      id: 'm1',
-      title: 'Obiad',
-      imageUrl:'https://pliki.doradcasmaku.pl/klasyczny-obiadek-kotlet-z-ziemniakami-i-mizeria0-4.webp',
-      description: ['Schabowy', 'Ziemniaki', 'Ogórki']
-    },
-    {
-      id: 'm2',
-      title: 'Napoje',
-      imageUrl:'https://image.ceneostatic.pl/data/products/17174166/i-coca-cola-zero-500ml.jpg',
-      description: ['Coca-cola', 'Zero']
-    }
-  ];
-  constructor() { }
+ menu: Menu[];
+  constructor(private menuService: MenuService) { }
 
   ngOnInit() {
+    this.menu = this.menuService.getMenu();
   }
 
 }

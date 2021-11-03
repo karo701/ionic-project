@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { MenuService } from '../menu.service';
+import {Menu} from '../menu.model';
 
 @Component({
   selector: 'app-menu-detail',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuDetailPage implements OnInit {
 
-  constructor() { }
+  loadedMenuDetail: Menu;
+  constructor(private activatedRoute: ActivatedRoute, private menuService: MenuService) { }
 
   ngOnInit() {
+    this.activatedRoute.paramMap.subscribe(paramMap =>{
+      if(!paramMap.has('menuId')){
+      return;
+      }
+      const menuId = paramMap.get('menuId');
+      this.loadedMenuDetail = this.menuService.getMenuDetail(menuId);
+    });
   }
 
 }

@@ -15,7 +15,7 @@ const routes: Routes = [
         loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
       },
       {
-        path: ':recipeId',
+        path: ':menuId',
         loadChildren: () => import('./menu/menu-detail/menu-detail-routing.module').then( m => m.MenuDetailPageRoutingModule)
       }
     ]
