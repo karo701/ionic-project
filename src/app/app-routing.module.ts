@@ -9,8 +9,17 @@ const routes: Routes = [
   },
   {
     path: 'menu',
-    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
-  },
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+      },
+      {
+        path: ':recipeId',
+        loadChildren: () => import('./menu/menu-detail/menu-detail-routing.module').then( m => m.MenuDetailPageRoutingModule)
+      }
+    ]
+  }
 ];
 
 @NgModule({

@@ -5,5 +5,12 @@
 </ion-header>
 
 <ion-content>
-  <p>Menu works</p>
+  <ion-list>
+    <ion-item *ngFor=" let menu of menu">
+      <ion-avatar slot="start">
+          <ion-img [src]="menu.imageUrl"></ion-img>
+      </ion-avatar>
+      <ion-label>{{menu.title}}</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
