@@ -1,23 +1,26 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>menu-detail</ion-title>
+  <ion-toolbar color="primary">
+    <ion-button slot="start">
+      <ion-back-button defaultHref="'/menu'"></ion-back-button>
+    </ion-button>
+    <ion-title>{{loadedMenuDetail?.title}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-grid>
+  <ion-grid class="ion-no-padding">
     <ion-row>
-<ion-col><ion-img [src]="loadedMenuDetail.imageUrl"></ion-img></ion-col>
+<ion-col class="ion-no-padding"><ion-img [src]="loadedMenuDetail?.imageUrl"></ion-img></ion-col>
 </ion-row>
 <ion-row>
   <ion-col>
-    <h1>{{ loadedMenuDetail.title}}</h1>
+    <h1 class="ion-text-center">{{ loadedMenuDetail?.title}}</h1>
   </ion-col>
 </ion-row>
 <ion-row>
   <ion-col>
     <ion-list>
-      <ion-item *ngFor="let ds of loadedMenuDetail.description">
+      <ion-item *ngFor="let ds of loadedMenuDetail?.description">
         {{ ds }}
       </ion-item>
     </ion-list>
