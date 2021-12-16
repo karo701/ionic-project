@@ -1,2 +1,11 @@
-[{"id": "m1","title": "Obiad", "description": ["Schabowy", "Ziemniaki", "Ogórki"]},
-{"id": "m2","title": "Napoje", "description": ["Coca-Cola", "Zero", "Fanta"]}]
+[
+{"id": "m1","title": "Śniadania", "imageUrl":"https://pliki.doradcasmaku.pl/klasyczny-obiadek-kotlet-z-ziemniakami-i-mizeria0-4.webp", "description": ["Jajecznica", "Tosty", "Naleśniki"]},
+{"id": "m2","title": "Makarony", "imageUrl":"https://image.ceneostatic.pl/data/products/17174166/i-coca-cola-zero-500ml.jpg", "description": ["Carbonara", "Spaghetti", "Szpinka + kurczak"]},
+{"id": "m3","title": "Zapiekanki", "description": ["Boczek + ziemniaki", "Makaron + kurczak + ser", "Po zbójnicku"]},
+{"id": "m4","title": "Zupy", "description": ["Rosół", "Pomidorowa", "Żurek"]},
+{"id": "m5","title": "Sałatki", "description": ["Cezar", "Brokułowa", "Owocowa"]},
+{"id": "m6","title": "Dla dzieci", "description": ["Nuggetsy", "Frytki", "Pancakes"]},
+{"id": "m7","title": "Desery", "description": ["Deser lodowy", "Szarlotka", "Sernik"]},
+{"id": "m8","title": "Napoje", "description": ["Coca-Cola", "Zero", "Fanta"]},
+{"id": "m9","title": "Alkohole", "description": ["Wino", "Piwo", "Drinki"]},
+{"id": "m10","title": "Dodatki", "description": ["Sos", "Ryż", "Chleb"]}]
