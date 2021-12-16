@@ -10,13 +10,19 @@ export class MenuService {
     {
       id: 'm1',
       title: 'Obiad',
-      imageUrl:'https://pliki.doradcasmaku.pl/klasyczny-obiadek-kotlet-z-ziemniakami-i-mizeria0-4.webp',
+      imageUrl:'https://pliki.doradcasmaku.pl/nie-tylko-kanapki-poznaj-5-przepisow-na-pyszne-sniadania0-4.jpg',
       description: ['Schabowy', 'Ziemniaki', 'Ogórki']
     },
     {
       id: 'm2',
       title: 'Napoje',
       imageUrl:'https://image.ceneostatic.pl/data/products/17174166/i-coca-cola-zero-500ml.jpg',
+      description: ['Coca-cola', 'Zero']
+    },
+    {
+      id: 'm10',
+      title: 'Napoje',
+      imageUrl:'',
       description: ['Coca-cola', 'Zero']
     }
   ];
