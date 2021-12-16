@@ -8,11 +8,16 @@ import { MenuService } from './menu.service';
   styleUrls: ['./menu.page.scss'],
 })
 export class MenuPage implements OnInit {
- menu: Menu[];
-  constructor(private menuService: MenuService) { }
+ results: any;
+  //menu: Menu[];
+  constructor(/*private menuService: MenuService*/) { }
 
   ngOnInit() {
-    this.menu = this.menuService.getMenu();
+    fetch('./assets/input.json').then(res => res.json()).then(json => {
+      console.log('results::', json);
+      this.results = json;
+    });
+    //this.menu = this.menuService.getMenu();
   }
 
 }

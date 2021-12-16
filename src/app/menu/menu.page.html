@@ -6,7 +6,7 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor=" let menu of menu" [routerLink]="['/menu', menu.id]">
+    <ion-item *ngFor=" let menu of results" [routerLink]="['/menu', menu.id]">
       <ion-avatar slot="start">
           <ion-img [src]="menu.imageUrl"></ion-img>
       </ion-avatar>
