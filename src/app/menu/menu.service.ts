@@ -6,8 +6,8 @@ import { Menu } from './menu.model';
 })
 export class MenuService {
 
-  private menu: Menu[] = [
-    {
+  private menu: Menu[] = [];
+  /*  {
       id: 'm1',
       title: 'Obiad',
       imageUrl:'https://pliki.doradcasmaku.pl/nie-tylko-kanapki-poznaj-5-przepisow-na-pyszne-sniadania0-4.jpg',
@@ -25,11 +25,11 @@ export class MenuService {
       imageUrl:'',
       description: ['Coca-cola', 'Zero']
     }
-  ];
+  ];*/
 
   constructor() { }
 
-  getMenu(){
+ /* getMenu(){
     return [...this.menu];
   }
   getMenuDetail(menuId: string){
@@ -37,5 +37,5 @@ export class MenuService {
       ...this.menu.find(menu => menu.id === menuId)
   };
 
-  }
+  }*/
 }
