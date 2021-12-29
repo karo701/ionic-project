@@ -21,7 +21,16 @@
   <ion-col>
     <ion-list>
       <ion-item *ngFor="let ds of loadedMenuDetail?.info">
-        {{ ds.name }}
+        <ion-content>
+          <ion-button expand="full" (click)="tutorialShown = !tutorialShown">
+              <span>{{ds.name}}</span>
+              <ion-icon id="tutorialIcon" name="arrow-dropdown" slot="end"></ion-icon>
+          </ion-button>
+
+          <ion-text id="tutorial" *ngIf="tutorialShown">
+              {{ds.detail}}
+          </ion-text>
+      </ion-content>
       </ion-item>
     </ion-list>
   </ion-col>
