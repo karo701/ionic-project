@@ -31,8 +31,6 @@ export class MenuDetailPage implements OnInit {
         this.results = json;
         this.loadedMenuDetail = this.results.find((item) => (item.id === menuId));
       });
-      //this.loadedMenuDetail = this.results.filter(result => result.id === 'm1');
-      //this.loadedMenuDetail = this.results.json.find((item) => (item.id === 'm1'));
     });
 
   }
