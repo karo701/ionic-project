@@ -1,6 +1,6 @@
 [
 {"id": "m1","info": [{"name": "informacja","detail":"śniadania od godziny 08:00 do 12:00"}],"title": "Śniadania", "imageUrl":"https://tradycyjne-przepisy.pl/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2009/11/jajecznica_pomidory_kielbasa.jpg.webp", "description": ["Jajecznica", "Tosty", "Naleśniki"]},
-{"id": "m2","title": "Makarony", "imageUrl":"https://static.deon.pl/storage/image/core_files/2010/8/23/7cca6df4f08efc1686336e1c244b6ff3/jpg/deon/articles-thumb-xlarge-breakpoint-default/doskonale-spaghetti-carbonara.webp", "description": ["Carbonara", "Spaghetti", "Szpinka + kurczak"]},
+{"id": "m2","info": [{"name": "informacja","detail":"W tym tygodniu polecamy makaron Carbonara"}],"title": "Makarony", "imageUrl":"https://static.deon.pl/storage/image/core_files/2010/8/23/7cca6df4f08efc1686336e1c244b6ff3/jpg/deon/articles-thumb-xlarge-breakpoint-default/doskonale-spaghetti-carbonara.webp", "description": ["Carbonara", "Spaghetti", "Szpinka + kurczak"]},
 {"id": "m3","title": "Zapiekanki", "imageUrl":"https://poprostupycha.com.pl/wp-content/uploads/2021/01/zapiekanka-z-makaronem_13.jpg", "description": ["Boczek + ziemniaki", "Makaron + kurczak + ser", "Po zbójnicku"]},
 {"id": "m4","title": "Zupy", "imageUrl":"https://szefpoleca.pl/wp-content/uploads/2021/10/domowy-rosol-na-skrzydelkach-900x575.webp", "description": ["Rosół", "Pomidorowa", "Żurek"]},
 {"id": "m5","title": "Sałatki", "imageUrl":"https://szefpoleca.pl/wp-content/uploads/2021/10/salatka-cezar-900x575.webp", "description": ["Cezar", "Brokułowa", "Owocowa"]},

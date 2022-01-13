@@ -13,6 +13,7 @@ export class MenuDetailPage implements OnInit {
 
   results: any;
   loadedMenuDetail: Menu;
+  tutorialShown = false;
   constructor(
     private activatedRoute: ActivatedRoute,
     private menuService: MenuService,
